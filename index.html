@@ -48,7 +48,7 @@
         <!-- ------------------------------Navigation---------------------------- -->
         <div class="header-navigation position-relative g-container mt-4 py-3">
 
-            <ul class="header-navigation__menu desktoppy-md-0 py-5 ">
+            <ul class="header-navigation__menu desktop  ">
                 <div class="callcenter-mobile d-md-none d-block px-2 w-100 mb-5">
                     <div class="d-flex flex-column">
                         <span class="header-info__callcenter--title text-white">Qaynar xətt</span>
@@ -489,19 +489,20 @@
         $(document).ready(function () {
 
             $(window).resize(function () {
-                if (window.innerWidth < 800) {
+                if (window.outerWidth < 800) {
                     $('.header-navigation__menu').addClass('mobile')
                     $('.header-navigation__menu').removeClass('desktop')
                     $('.fa-chevron-down').addClass('text-dark')
                     $('.fa-chevron-down').removeClass('text-white')
 
-                } else {
-                    $('.header-navigation__menu').removeClass('mobile')
-                    $('.header-navigation__menu').addClass('desktop')
-                    $('.fa-chevron-down').removeClass('text-dark')
-                    $('.fa-chevron-down').addClass('text-white')
+                } 
+                // else {
+                //     $('.header-navigation__menu').removeClass('mobile')
+                //     $('.header-navigation__menu').addClass('desktop')
+                //     $('.fa-chevron-down').removeClass('text-dark')
+                //     $('.fa-chevron-down').addClass('text-white')
 
-                }
+                // }
 
             })
             $('.flag-name,.lang-icon').click(function () {
