@@ -30,7 +30,6 @@ a {
 
 body {
   font-family: SanFrancisco, Arial, Tahoma, Verdana, sans-serif !important;
-  overflow-x: hidden;
   background: url("/assest/body-bg-16 (1).jpg");
   background-position: center;
   background-size: cover;
@@ -188,7 +187,7 @@ body {
   left: -100%;
   width: 100%;
   background: #eaeaea;
-  height: 110vh;
+  height: 100vh;
   -webkit-transition: all ease-out 0.5s;
   transition: all ease-out 0.5s;
   display: -webkit-box;
