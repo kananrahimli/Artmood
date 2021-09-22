@@ -532,6 +532,23 @@
 
 
     $(document).ready(function () {
+
+        $(window).resize(function(){
+            if (window.innerWidth < 800) {
+                $('.header-navigation__menu').addClass('mobile')
+                $('.header-navigation__menu').removeClass('desktop')
+                $('.fa-chevron-down').addClass('text-dark')
+                $('.fa-chevron-down').removeClass('text-white')
+
+            } else {
+                $('.header-navigation__menu').removeClass('mobile')
+                $('.header-navigation__menu').addClass('desktop')
+                $('.fa-chevron-down').removeClass('text-dark')
+                $('.fa-chevron-down').addClass('text-white')
+
+            }
+
+        })
         $('.flag-name,.lang-icon').click(function () {
             $('.langs').fadeToggle('slow', function () {
 
@@ -552,43 +569,13 @@
 
         })
 
-        $('.search-mobile').click(function () {
-
-            $('.header-mobile__search').slideToggle('fast', function () {
-                if ($('.header-navigation__menu--language').hasClass('down')) {
-                    $('.header-navigation__menu--language').removeClass('down')
-                }
-                else {
-                    $('.header-navigation__menu--language').addClass('down')
-                }
-            })
-
-
-        })
 
         $('.fa-chevron-up').click(function(){
             $(window).scrollTop(0)
         })
 
-        $(window).resize(function () {
-            if (window.innerWidth < 800) {
-                $('.header-navigation__menu').addClass('mobile')
-                $('.header-navigation__menu').removeClass('desktop')
-                $('.fa-chevron-down').addClass('text-dark')
-                $('.fa-chevron-down').removeClass('text-white')
-
-            } else {
-                $('.header-navigation__menu').removeClass('mobile')
-                $('.header-navigation__menu').addClass('desktop')
-                $('.fa-chevron-down').removeClass('text-dark')
-                $('.fa-chevron-down').addClass('text-white')
-
-            }
-
-
-
-
-        })
+       
+          
     })
         </script>
 </body>
