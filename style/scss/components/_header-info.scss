@@ -1,0 +1,227 @@
+.header{
+    // overflow-x: hidden;
+    
+    i{
+        cursor: pointer;
+    }
+    .header-mobile__search{
+        position: relative;
+        display: none;
+        i{
+            position: absolute;
+            right: 4rem;
+            top: 1.2rem;
+        }
+    }
+
+    .header-info{
+      
+        &__name{
+            line-height: 1.6rem;
+            &--title1{
+                font-size: 0.9rem;
+                font-weight: 600;
+                color: #12658c;
+
+                @media screen and (max-width:480px) {
+                    font-size: 0.55rem;
+                }
+            }
+            &--title2{
+                font-size: 1.9rem;
+                font-weight: 600;
+                color: #12658c;
+                @media screen and (max-width:480px) {
+                    font-size: 1.1rem;
+                }
+            }
+            
+        }
+
+        &__callcenter{
+            line-height: 1.7rem;
+            &--title{
+                font-size: 0.9rem;
+                font-weight: 600;
+                color: #12658c;
+            }
+            &--number{
+                font-size: 1.21rem;
+                font-weight: 600;
+                color: #12658c;
+            }
+        }
+
+        &__search{
+            &--box{
+                width: 100%;
+                padding: 10px;
+                outline:  none;
+                border:  none;
+                background: #eaeaea;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .header-navigation{
+        background: #12658c;
+        height: 4rem;
+        z-index: 100;
+        // overflow-x: hidden;
+        &__menu.desktop{
+          
+            display: flex;
+            justify-content: space-between;
+
+            flex-wrap: wrap;
+            .header-navigation__submenu{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: start;
+                align-items: center;
+                display: none;
+                border-radius: 8px;
+                // border: 1px solid #12658c;
+                // margin-top: 1rem;
+                padding: 1rem 0rem;
+                
+               
+
+                &--item{
+                    margin: 10px ,0px;
+                }
+                  a,.flag-name{
+                        color: #000;
+                        cursor: pointer;
+                        font-size: 1.1rem;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            transition: all 600ms ;
+        
+                            &:hover{
+                                color: lightslategray;
+                           }
+                    }
+                
+            }
+            
+        }
+
+        .fa-times{
+            position: absolute;
+            top: 10px;
+            right: 40px;
+        }
+
+        .fa-bars{
+            position: absolute;
+            right: 2rem;
+          
+        }
+        .fa-search{
+            position: absolute;
+            left: 2rem;
+            top: 1rem;
+        }
+
+        &__menu.mobile.showMenu{
+            left: 0;
+        }
+       
+
+        &__menu.mobile{
+            
+            position: fixed;
+            top: 0;
+            z-index: 100;
+            left: -100%;
+            width: 100%;
+            background: #eaeaea;
+            height: 110vh;
+            transition: all ease-out 0.5s;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start ;
+            padding-left: 2rem;
+            justify-content: space-around;
+            a,.flag-name{
+                color: #000;
+                cursor: pointer;
+                font-size: 1.1rem;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    transition: all 600ms ;
+
+                    &:hover{
+                        color: #199ad6;
+                   }
+            }
+
+
+            .callcenter-mobile{
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: #12658c;
+                color: #ffffff;
+            
+            }
+            
+            .header-navigation__submenu{
+                display: none;
+                a{
+                    color: #000;
+                    cursor: pointer;
+                    font-size: 1rem;
+
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        transition: all 600ms ;
+                        text-align: center;
+    
+                        &:hover{
+                            color: #199ad6;
+                       }
+                }
+            }
+
+            
+        }
+
+
+        &__menu{
+
+        
+            &--item{
+                a,.flag-name{
+                    cursor: pointer;
+                    font-size: 1.1rem;
+                    color: #fff;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    transition: all 600ms ;
+
+                    &:hover{
+                        color: #199ad6;
+                    }
+                }  
+
+                
+
+                .langs{
+                    background: #ffffff;
+                   width: 100%;
+                    border: 1px solid #12658c;
+                    border-radius: 2px;
+                    display: none;
+                }
+                .langs.showLang{
+                    display: block;
+                }
+                
+            }
+        }
+    }
+}

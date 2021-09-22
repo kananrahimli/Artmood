@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.g-container{
+    padding: 0px 7rem;
+
+
+    @media screen and (max-width:768px) {
+        padding: 0px 2rem;
+    }
+}
+
+body{
+    font-family: SanFrancisco, Arial, Tahoma, Verdana, sans-serif !important;
+    overflow-x: hidden;
+    background: url('/assest/body-bg-16\ \(1\).jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+
+// Components
+
+@import "components/header-info";
+@import "components/swiper";
+@import "components/main-cards";
+@import "components/main-infos";
+@import "components/media-advice";
+@import "components/footer";

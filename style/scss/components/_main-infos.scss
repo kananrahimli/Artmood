@@ -1,0 +1,62 @@
+.main{
+    .main-infos__list{
+        height: 27rem;
+        &--item{
+            background: #eaeaea;
+            padding: 2rem 3rem;
+            border-radius: 20px;
+            display: flex;
+            cursor: pointer;
+            transition: all 0.5s ;
+            color: #12658c;
+
+            &:hover{
+                background: #12658c;
+                color: #ffffff;
+            }
+            &:hover a{
+                color: #ffffff;
+            }
+            
+        }
+        &--link{
+            color: #000;
+            font-size: 1.4rem;
+            text-decoration: none;
+            @media screen and (max-width:768px) {
+                font-size: 1rem;
+            }
+            @media screen and (max-width:570px) {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .main-notifications{
+        padding: 0.3rem 1rem;
+        background-color: #eaeaea;
+        border-radius: 10px;
+
+        &__title{
+            font-size: 2.4rem;
+
+            i{
+                color: #12658c;
+            }
+            @media screen and (max-width:768px){
+                font-size: 2rem;
+            }
+        }
+
+        &__link{
+            font-size: 1.4rem;
+            color: #000;
+            text-decoration: none;
+            transition: all 0.5s;
+            &:hover{
+                color: #12658c;
+            }
+            
+        }
+    }
+}
