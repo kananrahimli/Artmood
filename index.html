@@ -49,13 +49,13 @@
         <div class="header-navigation position-relative g-container mt-4 py-3">
 
             <ul class="header-navigation__menu desktop  ">
-                <div class="callcenter-mobile d-md-none d-block px-2 w-100 mb-5">
+                <!-- <div class="callcenter-mobile d-md-none d-block px-2 w-100 mb-5">
                     <div class="d-flex flex-column">
                         <span class="header-info__callcenter--title text-white">Qaynar xətt</span>
                         <span class="header-info__callcenter--number text-white"><i
                                 class="fas fa-phone-alt"></i>1654</span>
                     </div>
-                </div>
+                </div> -->
                 <li class="header-navigation__menu--item "><a href=""><i
                             class="fas fa-home mt-1 text-primary d-md-block d-none"></i></a></li>
                 <li class="header-navigation__menu--item"><a href="">Haqqımızda</a><i
@@ -75,7 +75,13 @@
                     </ul>
                 </li>
                 <li class="header-navigation__menu--item"><a href="">Qanunvericilik</a><i
-                        class="fas fa-chevron-down text-white ml-2  submenu"></i></li>
+                        class="fas fa-chevron-down text-white ml-2  submenu"></i>
+                        <ul class="header-navigation__submenu mt-2 pl-md-0 pl-3">
+                            <li class="header-navigation__submenu--item"><a href="">Xəbərdarlıqlar</a></li>
+                            <li class="header-navigation__submenu--item my-3"><a href="">Tövsiyələr</a></li>
+                            <li class="header-navigation__submenu--item"><a href="">Təlimatlar</a></li>
+                        </ul>
+                </li>
                 <li class="header-navigation__menu--item"><a href="">Beynəlxalq Əməkdaşlıq</a></li>
                 <li class="header-navigation__menu--item"><a href="">Əlaqə</a></li>
                 <li class="header-navigation__menu--item">
@@ -97,6 +103,70 @@
                 </li>
                 <i class="fas fa-times fa-2x text-white d-md-none d-block"></i>
             </ul>
+
+
+
+
+            <ul class="header-navigation__menu mobile ">
+                <div class="callcenter-mobile d-md-none d-block px-2 w-100 mb-5">
+                    <div class="d-flex flex-column">
+                        <span class="header-info__callcenter--title text-white">Qaynar xətt</span>
+                        <span class="header-info__callcenter--number text-white"><i
+                                class="fas fa-phone-alt"></i>1654</span>
+                    </div>
+                </div>
+                <li class="header-navigation__menu--item "><a href=""><i
+                            class="fas fa-home mt-1 text-primary d-md-block d-none"></i></a></li>
+                <li class="header-navigation__menu--item"><a href="">Haqqımızda</a><i
+                        class="fas fa-chevron-down  ml-2 submenu "></i>
+                    <ul class="header-navigation__submenu mt-2 pl-md-0 pl-3">
+                        <li class="header-navigation__submenu--item mb-3"><a href="">Tarix</a></li>
+                        <li class="header-navigation__submenu--item"><a href="">Əsasnamə</a></li>
+                    </ul>
+                </li>
+                <li class="header-navigation__menu--item"><a href="">Xidmətlər</a></li>
+                <li class="header-navigation__menu--item"><a href="">Maarifləndirmə</a><i
+                        class="fas fa-chevron-down  ml-2 submenu"></i>
+                    <ul class="header-navigation__submenu mt-2 pl-md-0 pl-3">
+                        <li class="header-navigation__submenu--item"><a href="">Xəbərdarlıqlar</a></li>
+                        <li class="header-navigation__submenu--item my-3"><a href="">Tövsiyələr</a></li>
+                        <li class="header-navigation__submenu--item"><a href="">Təlimatlar</a></li>
+                    </ul>
+                </li>
+                <li class="header-navigation__menu--item"><a href="">Qanunvericilik</a><i
+                        class="fas fa-chevron-down  ml-2  submenu"></i>
+                    <ul class="header-navigation__submenu mt-2 pl-md-0 pl-3">
+                        <li class="header-navigation__submenu--item"><a href="">Xəbərdarlıqlar</a></li>
+                        <li class="header-navigation__submenu--item my-3"><a href="">Tövsiyələr</a></li>
+                        <li class="header-navigation__submenu--item"><a href="">Təlimatlar</a></li>
+                    </ul>
+                </li>
+                <li class="header-navigation__menu--item"><a href="">Beynəlxalq Əməkdaşlıq</a></li>
+                <li class="header-navigation__menu--item"><a href="">Əlaqə</a></li>
+                <li class="header-navigation__menu--item">
+                    <div class="header-navigation__menu--language">
+                        <div>
+                            <span><img class="flag" src="/assest/azerbaijan.png" width="30" alt=""></span>
+                            <span class="flag-name ml-1 ">AZ</span>
+                            <span><i class="fas fa-chevron-down text-white ml-2 lang-icon "></i></span>
+                        </div>
+
+
+                        <div class="langs mt-3">
+                            <ul class="text-center">
+                                <li><a href="" class="text-dark">AZ</a></li>
+                                <li><a href="" class="text-dark">EN</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <i class="fas fa-times fa-2x text-white d-md-none d-block"></i>
+            </ul>
+
+
+
+
+
             <i class="fas fa-bars fa-2x  d-md-none d-block text-white "></i>
             <i class="fas fa-search fa-2x text-white d-md-none d-block search-mobile"></i>
         </div>
@@ -488,23 +558,28 @@
 
         $(document).ready(function () {
 
-            $(window).resize(function () {
-                if (window.outerWidth < 800) {
-                    $('.header-navigation__menu').addClass('mobile')
-                    $('.header-navigation__menu').removeClass('desktop')
-                    $('.fa-chevron-down').addClass('text-dark')
-                    $('.fa-chevron-down').removeClass('text-white')
 
-                } 
-                // else {
-                //     $('.header-navigation__menu').removeClass('mobile')
-                //     $('.header-navigation__menu').addClass('desktop')
-                //     $('.fa-chevron-down').removeClass('text-dark')
-                //     $('.fa-chevron-down').addClass('text-white')
+            
+            // $(window).resize(function () {
+            //     if ($(window).innerWidth()< 800) {
+                  
+            //         $('.fa-chevron-down').addClass('text-dark')
+            //         $('.fa-chevron-down').removeClass('text-white')
 
-                // }
+            //     } 
+            //     else {
+        
+            //         $('.fa-chevron-down').removeClass('text-dark')
+            //         $('.fa-chevron-down').addClass('text-white')
+
+            //     }
+
+            // })
+            $('.fa-search ').click(function(){
+                $('.header-mobile__search ').slideToggle('fast')
 
             })
+            
             $('.flag-name,.lang-icon').click(function () {
                 $('.langs').fadeToggle('slow', function () {
 

@@ -69,7 +69,7 @@
         height: 4rem;
         z-index: 100;
         // overflow-x: hidden;
-        &__menu.desktop{
+        .desktop{
           
             display: flex;
             justify-content: space-between;
@@ -106,6 +106,10 @@
                     }
                 
             }
+
+            @media screen and (max-width:768px) {
+                display: none;
+            }
             
         }
 
@@ -126,12 +130,12 @@
             top: 1rem;
         }
 
-        &__menu.mobile.showMenu{
+        .mobile.showMenu{
             left: 0;
         }
        
 
-        &__menu.mobile{
+        .mobile{
             padding-top: 4rem;
             padding-bottom: 8rem;
             position: fixed;
@@ -158,6 +162,10 @@
                     &:hover{
                         color: #199ad6;
                    }
+            }
+
+            i.fa-chevron-down{
+                color: #000 !important;
             }
             
 
