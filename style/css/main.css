@@ -216,9 +216,9 @@ body {
   top: 0;
   z-index: 100;
   left: -100%;
-  width: 50%;
+  width: 100%;
   background: #f64c72;
-  opacity: 0.9;
+  opacity: 0.95;
   height: 100vh;
   -webkit-transition: all ease-out 0.5s;
   transition: all ease-out 0.5s;
