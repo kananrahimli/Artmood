@@ -31,7 +31,8 @@ a{
 body{
     font-family: SanFrancisco, Arial, Tahoma, Verdana, sans-serif !important;
     // overflow-x: hidden;
-    background: url('/assest/body-bg-16\ \(1\).jpg');
+    // background: url('/assest/body-bg-16\ \(1\).jpg');
+    background: #2f2fa2;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -41,6 +42,7 @@ body{
 // Components
 
 @import "components/header-info";
+@import "components/services";
 @import "components/swiper";
 @import "components/main-cards";
 @import "components/main-infos";

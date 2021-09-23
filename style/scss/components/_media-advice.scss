@@ -1,16 +1,19 @@
 .media{
     .media-title{
-        background: #eaeaea;
+        background: none;
         border-radius: 10px;
+        color: #ffffff;
+        cursor: pointer;
         i{
-            color: #12658c;
+            color: #f64c72;
         }
     }
 
     .media-items{
-        background: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+        background: none;
+        // border-radius: 10px;
+        // box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+        color: #ffffff;
         
 
         &__item{

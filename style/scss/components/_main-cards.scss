@@ -3,12 +3,17 @@
         cursor: pointer;
         border-radius: 10px;
         flex-basis: 270px;
-
+        transition: all 0.5s;
         box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
         overflow: hidden;
         width: 100%;
         @media screen and (max-width:570px) {
             flex-basis: auto;
+        }
+
+        &:hover{
+            background-color: #f64c72;
+            transform: rotate(-2deg);
         }
         &--image{
             transition: all 0.5s;
@@ -20,9 +25,10 @@
         }
 
         &--description{
-            background: #ffffff;
+            background: none;
             font-size: 1.2rem;
             font-weight: 600;
+            color: #ffffff;
         }
     }
 }
