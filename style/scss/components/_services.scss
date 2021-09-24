@@ -36,14 +36,25 @@
         &__social{
           align-self: baseline;
           // text-align: center;
+          span{
+              font-size: 1.8rem;
+              color: #ffffff;
+              margin-left: 1rem;
+              cursor: pointer;
+              @media screen and (max-width:570px) {
+                font-size: 1.2rem;
+              }
+          }
           &--link{
-            color: #f64c72;
-            font-size: 4rem;
+            color: #ffffff;
+            font-size: 2.5rem;
             cursor: pointer;
 
+
             @media screen and (max-width:570px) {
-              font-size: 3rem;
+              font-size: 1.8rem;
             }
+
             
           }
         }
@@ -112,6 +123,10 @@
                       transition: all 200ms ease-in;
                   }
 
+                  select{
+                    padding: 12px 10px;
+                  }
+
                   &__input,
                     .desire{
                     width: 100%;
@@ -121,10 +136,10 @@
                     margin: 15px 0 5px;
                     background: transparent;
                     outline: none;
-                    border: 2px solid #f64c72;
+                    border: 2px solid #ffffff;
 
                     &.invalid{
-                      border: 3px solid red;
+                      border: 2px solid red;
                     }
                   }
 
@@ -132,6 +147,8 @@
                     height: 150px;
                     padding: 10px 10px;
                   }
+
+                  
 
            }
 

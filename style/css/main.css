@@ -61,7 +61,7 @@ body {
 .header .header-info__name--title1 {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #f64c72;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 480px) {
@@ -73,7 +73,7 @@ body {
 .header .header-info__name--title2 {
   font-size: 1.9rem;
   font-weight: 600;
-  color: #f64c72;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 480px) {
@@ -89,13 +89,13 @@ body {
 .header .header-info__callcenter--title {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #f64c72;
+  color: #ffffff;
 }
 
 .header .header-info__callcenter--number {
   font-size: 1.21rem;
   font-weight: 600;
-  color: #f64c72;
+  color: #ffffff;
 }
 
 .header .header-info__search--box {
@@ -338,15 +338,28 @@ body {
       align-self: baseline;
 }
 
+.services .services-content__social span {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 570px) {
+  .services .services-content__social span {
+    font-size: 1.2rem;
+  }
+}
+
 .services .services-content__social--link {
-  color: #f64c72;
-  font-size: 4rem;
+  color: #ffffff;
+  font-size: 2.5rem;
   cursor: pointer;
 }
 
 @media screen and (max-width: 570px) {
   .services .services-content__social--link {
-    font-size: 3rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -406,6 +419,10 @@ body {
   transition: all 200ms ease-in;
 }
 
+.services .services-content__modal--group select {
+  padding: 12px 10px;
+}
+
 .services .services-content__modal--group__input,
 .services .services-content__modal--group .desire {
   width: 100%;
@@ -415,12 +432,12 @@ body {
   margin: 15px 0 5px;
   background: transparent;
   outline: none;
-  border: 2px solid #f64c72;
+  border: 2px solid #ffffff;
 }
 
 .services .services-content__modal--group__input.invalid,
 .services .services-content__modal--group .desire.invalid {
-  border: 3px solid red;
+  border: 2px solid red;
 }
 
 .services .services-content__modal--group__input.desire {
@@ -503,6 +520,50 @@ body {
   height: 100%;
 }
 
+.about h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.about p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  .about p {
+    text-align: left;
+  }
+}
+
+.img-code {
+  color: gray;
+  font-size: 1.2rem;
+  background: #eaeaea;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  border-radius: 2px;
+}
+
+option {
+  color: #000;
+}
+
+.contact-container__info--address p {
+  font-size: 1.3rem;
+}
+
+.contact-container__info--address p span {
+  font-size: 1.2rem;
+}
+
 .main-cards__card {
   cursor: pointer;
   border-radius: 10px;
@@ -524,9 +585,9 @@ body {
 }
 
 .main-cards__card:hover {
-  background-color: #f64c72;
-  -webkit-transform: rotate(-2deg);
-          transform: rotate(-2deg);
+  background-color: #272791;
+  -webkit-transform: rotate(0.5deg);
+          transform: rotate(0.5deg);
 }
 
 .main-cards__card--image {
@@ -626,7 +687,8 @@ body {
 }
 
 .detail .detail-description {
-  font-size: 2.4rem;
+  font-size: 2rem;
+  text-align: justify;
 }
 
 @media screen and (max-width: 768px) {

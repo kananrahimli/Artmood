@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 html{
     font-size: 16px;
     scroll-behavior: smooth;
@@ -44,6 +45,8 @@ body{
 @import "components/header-info";
 @import "components/services";
 @import "components/swiper";
+@import "components/about";
+@import "components/contact-us";
 @import "components/main-cards";
 @import "components/main-infos";
 @import "components/detail";
