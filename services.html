@@ -552,7 +552,7 @@
                         </div> -->
     
     
-                    <div class="col-md-6 mt-5 px-md-2 px-0 d-flex flex-wrap services-content__modal--action ">
+                    <div class="col-6 mt-5 px-md-2 px-0 d-flex flex-wrap services-content__modal--action ">
                         <button type="submit"
                             class="services-content__modal--action__submit disabled">Göndər</button>
                     </div>
@@ -676,6 +676,13 @@
             })
 
 
+            $('.header-navigation__menu--item').not(":nth-of-type(7)").click(function () {
+                $('.header-navigation__menu--item').removeClass('active')
+                $(this).addClass('active')
+
+            })
+
+
 
             // Contact form
 
@@ -733,6 +740,8 @@
                 // }
 
             })
+
+            
 
 
 

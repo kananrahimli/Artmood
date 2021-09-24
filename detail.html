@@ -256,6 +256,12 @@
                 $(window).scrollTop(0)
             })
 
+            $('.header-navigation__menu--item').not(":nth-of-type(7)").click(function () {
+                $('.header-navigation__menu--item').removeClass('active')
+                $(this).addClass('active')
+
+            })
+
 
 
         })
