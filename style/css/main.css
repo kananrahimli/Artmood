@@ -539,7 +539,8 @@ body {
 
 @media screen and (max-width: 768px) {
   .about p {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    text-align: left;
   }
 }
 
