@@ -36,7 +36,7 @@ body {
   background-attachment: fixed;
 }
 
-.header .backdrop {
+.backdrop {
   display: none;
   position: fixed;
   top: 0;
@@ -360,38 +360,61 @@ body {
   }
 }
 
-.services .services-content__social {
-  -ms-flex-item-align: baseline;
-      align-self: baseline;
-}
-
-.services .services-content__social span {
-  font-size: 1.8rem;
+.services .services-content span {
+  font-size: 2rem;
   color: #ffffff;
   margin-left: 1rem;
   cursor: pointer;
 }
 
 @media screen and (max-width: 570px) {
-  .services .services-content__social span {
-    font-size: 1.2rem;
+  .services .services-content span {
+    font-size: 1.8rem;
   }
+}
+
+.services .services-content__social {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
 }
 
 .services .services-content__social--link {
   color: #ffffff;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   cursor: pointer;
 }
 
 @media screen and (max-width: 570px) {
   .services .services-content__social--link {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 }
 
 .services .services-content__container {
   display: none;
+}
+
+.services .services-content .modal-2 {
+  z-index: 200;
+  position: fixed;
+  width: 90% !important;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
+
+.services .services-content .modal-2 .services-content__modal--group__label {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  cursor: text;
+  left: 2rem;
+  font-size: 20px;
+  color: #ffffff;
+  top: 22px;
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
 }
 
 .services .services-content__modal--action__submit {
@@ -420,8 +443,9 @@ body {
 }
 
 .services .services-content__modal--group__error {
-  color: red;
+  color: red !important;
   display: none;
+  font-size: 0.8rem !important;
 }
 
 .services .services-content__modal--group__error.show {
