@@ -20,7 +20,10 @@
         }
         &__adres{
             font-size: 1.2rem;
-
+            a{
+              color: #ffffff;
+              text-decoration: none;
+            }
             @media screen and (max-width:768px) {
               font-size: 1rem;
             }

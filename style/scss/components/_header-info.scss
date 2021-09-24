@@ -100,7 +100,7 @@
          
             
             .header-navigation__menu--item{
-
+                align-self: baseline;
                 &.active:not(:nth-of-type(7)){
                     background: #f64c72;
                 }

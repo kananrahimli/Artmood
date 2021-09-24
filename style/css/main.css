@@ -155,6 +155,8 @@ body {
 }
 
 .header .header-navigation .desktop .header-navigation__menu--item {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
   background: none;
   border-radius: 2px;
   padding: 0.8rem 2rem;
@@ -318,6 +320,11 @@ body {
 
 .services .services-container__adres {
   font-size: 1.2rem;
+}
+
+.services .services-container__adres a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -618,6 +625,16 @@ body {
   color: #f64c72;
 }
 
+.detail .detail-description {
+  font-size: 2.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .detail .detail-description {
+    font-size: 1.2rem;
+  }
+}
+
 .media .media-title {
   background: none;
   border-radius: 10px;
@@ -643,8 +660,8 @@ body {
 }
 
 .media .media-items__item--image:hover {
-  -webkit-transform: scale(1.125);
-          transform: scale(1.125);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .media .media-items__item--title {
