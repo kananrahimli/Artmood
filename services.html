@@ -147,7 +147,7 @@
             </div>
         </div>
 
-        <div class="services-content">
+        <div class="services-content ">
             <h1 class="services-content__title text-center font-weight-bold text-white ">Xidmətlərmiz</h1>
             <!-- <div>
                 <div class="row w-100 justify-content-between mx-0 px-0 my-5">
@@ -495,13 +495,13 @@
             <div class="backdrop">
 
             </div>
-            <div class="row justify-content-between">
+            <div class="row justify-content-between my-4">
                 <div class="col-md-4   text-center my-4"><i class="fab fa-facebook-f link services-content__social--link"></i><span class="link">Facebook</span></div>
-                <div class="col-md-4  text-center my-4"><i class="fab fa-facebook-f  link services-content__social--link"></i><span class="link">Facebook</span></div>
-                <div class="col-md-4  text-center my-4"><i class="fab fa-facebook-f  link services-content__social--link"></i><span class="link">Facebook</span></div>
-                <div class="col-md-4  text-center my-4"><i class="fab fa-facebook-f  link services-content__social--link"></i><span class="link">Facebook</span></div>
-                <div class="col-md-4  text-center my-4"><i class="fab fa-facebook-f  link services-content__social--link"></i><span class="link">Facebook</span></div>
-                <div class="col-md-4  text-center my-4"><i class="fab fa-facebook-f  link services-content__social--link"></i><span class="link">Facebook</span></div>
+                <div class="col-md-4  text-center my-4"><i class="fab fa-tiktok  link services-content__social--link"></i><span class="link">Facebook</span></div>
+                <div class="col-md-4  text-center my-4"><i class="fab fa-instagram  link services-content__social--link"></i><span class="link">Facebook</span></div>
+                <div class="col-md-4  text-center my-4"><i class="fab fa-whatsapp  link services-content__social--link"></i><span class="link">Facebook</span></div>
+                <div class="col-md-4  text-center my-4"><i class="fab fa-telegram  link services-content__social--link"></i><span class="link">Facebook</span></div>
+                <div class="col-md-4  text-center my-4"><i class="fab fa-youtube  link services-content__social--link"></i><span class="link">Facebook</span></div>
             </div>
 
             <div class="modal-2">
@@ -751,6 +751,10 @@
 
             $('.backdrop').click(function(){
                 $('.modal-2').fadeOut('fast')
+                $('.services-content__modal--group__input').removeClass('invalid')
+                $(".services-content__modal--group").find('.services-content__modal--group__error').removeClass('show')
+                $(".services-content__modal--group").find('.incorrect-email').css('display', 'none')
+                $(".services-content__modal--group").find('.incorrect-phone').css('display', 'none')
             })
 
             $('.services-content__social').click(function () {

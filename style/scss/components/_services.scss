@@ -84,11 +84,10 @@
           }
         }
 
-        
+
         &__modal{
            
               &--action{
-                
                 &__submit{
                     border-radius: 6px;
                     border: 1px solid #f64c72;
@@ -98,6 +97,7 @@
                     padding: 14px 55px;
                     font-weight: bold;
                     align-self: baseline;
+                   
                     justify-self: baseline;
                   }
 
