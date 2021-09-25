@@ -44,7 +44,7 @@ body {
   height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.75);
-  z-index: 200;
+  z-index: 100;
 }
 
 .header i {
@@ -367,9 +367,15 @@ body {
   cursor: pointer;
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 768px) {
   .services .services-content span {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .services .services-content span {
+    font-size: 1.2rem;
   }
 }
 
@@ -384,9 +390,15 @@ body {
   cursor: pointer;
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 768px) {
   .services .services-content__social--link {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .services .services-content__social--link {
+    font-size: 1.2rem;
   }
 }
 
