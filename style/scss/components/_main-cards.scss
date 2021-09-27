@@ -18,10 +18,17 @@
         }
         &--image{
             transition: all 0.5s;
+            height: 10rem;
+            width: 100%;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
+            object-fit: cover;
             &:hover{
                 transform: scale(1.125);
+            }
+
+            @media screen and (max-width:768px) {
+                height: auto;
             }
         }
 

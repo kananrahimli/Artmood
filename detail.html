@@ -28,8 +28,8 @@
 
         </div>
         <div class="header-mobile__search px-3 py-2">
-            <input type="text" class="form-control" placeholder="Axtraış">
-            <i class="fas fa-search"></i>
+            <input type="text" class="form-control search-input-mobile" placeholder="Axtraış">
+            <i class="fas fa-search find-mobile"></i>
         </div>
         <div class="header-info row mx-0 g-container justify-content-between  align-items-center">
             <div class="header-info__logo1 col-md-1 col-4 order-md-0 order-1  text-left">LOGO1</div>
@@ -43,8 +43,8 @@
                 <span class="header-info__callcenter--number"><i class="fas fa-phone-alt"></i>1654</span>
             </div>
             <div class="header-info__search col-3 d-md-block d-none ">
-                <input class="header-info__search--box" type="text" placeholder="Axtarış">
-                <i class="fas fa-search  text-white  search"></i>
+                <input class="header-info__search--box search-input" type="text" placeholder="Axtarış">
+                <i class="fas fa-search  text-white  search find"></i>
             </div>
             <div class="header-info__logo2 col-md-1 col-4 order-md-0 order-3  text-right ">LOGO2</div>
         </div>
@@ -135,7 +135,7 @@
     </section>
 
     <!-- -------------------------Main--------------------- -->
-    <div class="services g-container ">
+    <!-- <div class="services g-container ">
         <div class="services-container d-flex justify-content-between w-100 mt-2 mb-5">
             <h2 class="services-container__title text-white">
                 <i class="fab fa-ups"></i> Details
@@ -146,12 +146,12 @@
         </div>
 
         <div class="detail my-5">
-            <div class="detail-image mt-5 mb-4 "><img src="/assest/img.jpeg" class="img-fluid" alt=""></div>
-            <div class="detail-description text-white"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nam magni
+            <div class=" mt-5 mb-4 "><img src="" class="img-fluid detail-image" alt=""></div>
+            <div class=" text-white"><p class="detail-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nam magni
                 distinctio et nihil nisi recusandae totam accusantium, deleniti, nobis adipisci impedit fugiat illum
                 laboriosam inventore, natus quam provident? Nostrum!</p></div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- ---------------------Footer----------------- -->
@@ -213,63 +213,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script>
-
-        $(document).ready(function () {
-
-            $(window).scroll(function () {
-                if (window.pageYOffset > 200) {
-                    $('.header-navigation').addClass('sticky')
-                } else {
-                    $('.header-navigation').removeClass('sticky')
-                }
-            })
-
-            
-            $(' .search-mobile ').click(function () {
-                $('.header-mobile__search ').slideToggle('fast')
-                $('.backdrop').slideToggle('fast')
-
-            })
-            $('.backdrop').click(function(){
-                $('.header-mobile__search ').slideToggle('fast')
-                $('.backdrop').slideToggle('fast')
-            })
-
-            $('.flag-name,.lang-icon').click(function () {
-                $('.langs').fadeToggle('slow', function () {
-
-                })
-            })
-
-            $('.fa-bars').click(function () {
-                $('.header-navigation__menu').toggleClass('showMenu')
-            })
-            $('.fa-times').click(function () {
-                $('.header-navigation__menu').toggleClass('showMenu')
-            })
-
-
-
-            $('.fa-chevron-up').click(function () {
-                $(window).scrollTop(0)
-            })
-
-            $('.header-navigation__menu--item').not(":nth-of-type(7)").click(function () {
-                $('.header-navigation__menu--item').removeClass('active')
-                $(this).addClass('active')
-
-            })
-
-
-
-        })
-
-
-
-
-    </script>
 </body>
 
 </html>

@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html{
     font-size: 16px;
@@ -30,7 +31,7 @@ a{
 }
 
 body{
-    font-family: SanFrancisco, Arial, Tahoma, Verdana, sans-serif !important;
+    // font-family:  'Roboto', sans-serif !important ;
     // overflow-x: hidden;
     // background: url('/assest/body-bg-16\ \(1\).jpg');
     background: #2f2fa2;

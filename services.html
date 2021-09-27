@@ -28,8 +28,8 @@
 
         </div>
         <div class="header-mobile__search px-3 py-2">
-            <input type="text" class="form-control" placeholder="Axtraış">
-            <i class="fas fa-search"></i>
+            <input type="text" class="form-control search-input-mobile" placeholder="Axtraış">
+            <i class="fas fa-search find-mobile"></i>
         </div>
         <div class="header-info row mx-0 g-container justify-content-between  align-items-center">
             <div class="header-info__logo1 col-md-1 col-4 order-md-0 order-1  text-left">LOGO1</div>
@@ -43,8 +43,8 @@
                 <span class="header-info__callcenter--number"><i class="fas fa-phone-alt"></i>1654</span>
             </div>
             <div class="header-info__search col-3 d-md-block d-none ">
-                <input class="header-info__search--box" type="text" placeholder="Axtarış">
-                <i class="fas fa-search  text-white  search"></i>
+                <input class="header-info__search--box search-input" type="text" placeholder="Axtarış">
+                <i class="fas fa-search  text-white  search find"></i>
             </div>
             <div class="header-info__logo2 col-md-1 col-4 order-md-0 order-3  text-right ">LOGO2</div>
         </div>
@@ -62,7 +62,7 @@
                 <li class="header-navigation__menu--item active"><a href="/services.html">Xidmətlər</a></li>
                 <li class="header-navigation__menu--item"><a href="/support.html">Dəstək ol</a>
                 </li>
-                <li class="header-navigation__menu--item"><a href="contact-us.html">Əlaqə</a>
+                <li class="header-navigation__menu--item"><a href="/contact-us.html">Əlaqə</a>
                 </li>
                 <li class="header-navigation__menu--item">
                     <div class="header-navigation__menu--language">
@@ -626,167 +626,7 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script>
-
-        $(document).ready(function () {
-
-            $(window).scroll(function () {
-                if (window.pageYOffset > 200) {
-                    $('.header-navigation').addClass('sticky')
-                } else {
-                    $('.header-navigation').removeClass('sticky')
-                }
-            })
-
-            
-            $(' .search-mobile ').click(function () {
-                $('.header-mobile__search ').slideToggle('fast')
-                $('.backdrop').slideToggle('fast')
-
-            })
-            $('.backdrop').click(function(){
-                $('.header-mobile__search ').slideUp('fast')
-                $('.backdrop').slideUp('fast')
-            })
-
-            $('.flag-name,.lang-icon').click(function () {
-                $('.langs').fadeToggle('slow', function () {
-
-                })
-            })
-
-            $('.fa-bars').click(function () {
-                $('.header-navigation__menu').toggleClass('showMenu')
-            })
-            $('.fa-times').click(function () {
-                $('.header-navigation__menu').toggleClass('showMenu')
-            })
-
-
-
-            $('.header-navigation__menu--item').click(function () {
-                $('.header-navigation__menu--item').removeClass('active')
-                $(this).addClass('active')
-
-            })
-
-
-            $('.fa-chevron-up').click(function () {
-                $(window).scrollTop(0)
-            })
-
-
-            $('.header-navigation__menu--item').not(":nth-of-type(7)").click(function () {
-                $('.header-navigation__menu--item').removeClass('active')
-                $(this).addClass('active')
-
-            })
-
-
-
-            // Contact form
-
-
-
-
-            $('.services-content__modal--group__input').on('input', function () {
-                if ($(this).val() != '') {
-                    $(this).addClass('active')
-                }
-
-                // if ($(this).val()!=='' && $('.email').val().includes('@')) {
-                //     $('.services-content__modal--action__submit').removeClass('disabled')
-                //     console.log('silindi');
-                // } else  {
-                //     $('.services-content__modal--action__submit').addClass('disabled')
-
-                //     console.log('elave olundu');
-                // }
-
-            })
-
-
-            $('.services-content__modal--group__input').focusout(function () {
-                //  if($(this).val() ==='' ||  !$('.email').val().includes('@')) {
-                // $('.services-content__modal--action__submit').addClass('disabled')
-                //     console.log('elave olundu');
-                // }
-                // else  {
-                //     $('.services-content__modal--action__submit').removeClass('disabled')
-                // console.log('silindi');
-                // } 
-
-                if ($(this).val() === '') {
-                    $(this).removeClass('active');
-                    $(this).addClass('invalid')
-                    $(this).parent(".services-content__modal--group").find('.services-content__modal--group__error').addClass('show')
-
-                }
-                else if (!$(this).parent(".services-content__modal--group").find('.email').val().includes('@')) {
-                    $(this).addClass('invalid')
-                    $('.incorrect-email').css('display', 'block')
-
-                }
-
-                
-
-                // if (($(this).parent(".services-content__modal--group").find('.phone').val().length != 13 ||
-                //     $(this).parent(".services-content__modal--group").find('.phone').val().length != 12 ||
-                //     $(this).parent(".services-content__modal--group").find('.phone').val().length != 10) &&
-                //     ($(this).parent(".services-content__modal--group").find('.phone').val().length > 0)) {
-
-                //     $(this).addClass('invalid')
-                //     $('.incorrect-phone').css('display', 'block')
-                // }
-
-            })
-
-            
-
-
-
-            $('.services-content__modal--group__input').focus(function () {
-                $(this).removeClass('invalid')
-                $(this).parent(".services-content__modal--group").find('.services-content__modal--group__error').removeClass('show')
-                $(this).parent(".services-content__modal--group").find('.incorrect-email').css('display', 'none')
-                $(this).parent(".services-content__modal--group").find('.incorrect-phone').css('display', 'none')
-            })
-
-
-            $('.link').click(function(){
-                $('.backdrop').slideToggle('fast')
-                $('.modal-2').fadeToggle('fast')
-            })
-
-            $('.backdrop').click(function(){
-                $('.modal-2').fadeOut('fast')
-                $('.services-content__modal--group__input').removeClass('invalid')
-                $(".services-content__modal--group").find('.services-content__modal--group__error').removeClass('show')
-                $(".services-content__modal--group").find('.incorrect-email').css('display', 'none')
-                $(".services-content__modal--group").find('.incorrect-phone').css('display', 'none')
-            })
-
-            $('.services-content__social').click(function () {
-                $('.services-content__container').not($(this).parent('.row').find('.services-content__container')).slideUp('fast')
-
-                $(this).parent('.row').find('.services-content__container').slideToggle('fast')
-
-                $('.services-content__social').not($(this)).addClass('col-md-12')
-                if ($(this).hasClass('col-md-12')) {
-                    $(this).addClass('col-md-4')
-                    $(this).removeClass('col-md-12')
-                } else {
-                    $(this).removeClass('col-md-4')
-                    $(this).addClass('col-md-12')
-                }
-            })
-        })
-
-
-
-
-
-    </script>
+   
 </body>
 
 </html>
