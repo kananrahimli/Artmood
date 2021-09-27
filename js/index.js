@@ -214,7 +214,7 @@ $(document).ready(function () {
         
            
             history.pushState({}, null, 'detail.html');
-            $('.main').html(` <div class="services g-container ">
+            $('.main').html(` <div class="services  ">
             <div class="services-container d-flex justify-content-between w-100 mt-2 mb-5">
                 <h2 class="services-container__title text-white">
                     <i class="fab fa-ups"></i> Details
