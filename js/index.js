@@ -94,7 +94,7 @@ $(document).ready(function () {
                 <div class=" media-items__image--container">
                     <img src="${advice.img}" alt="" class="img-fluid media-items__item--image ">
                 </div>
-                <div class="media-items__item--description p-3  ">
+                <div class="media-items__item--description py-4 px-0  ">
                     <p class="media-items__item--title">${advice.desc}</p>
                     <a href="#" class="main-notifications__link more">Daha çox <i
                             class="fas fa-long-arrow-alt-right"></i></a>
@@ -109,7 +109,7 @@ $(document).ready(function () {
                 <div class=" media-items__image--container">
                     <img src="${media.img}" alt="" class="img-fluid media-items__item--image ">
                 </div>
-                <div class="media-items__item--description p-3  ">
+                <div class="media-items__item--description py-4 px-0  ">
                     <p class="media-items__item--title">${media.desc}</p>
                     <a href="#" class="main-notifications__link more">Daha çox <i
                             class="fas fa-long-arrow-alt-right"></i></a>
