@@ -181,7 +181,7 @@ $(document).ready(function () {
         $('.isMedia').append(`
         
         <div class="media-items__item mb-4 row justify-content-between">
-        <div class="col-lg-6 px-0  media-items__image--container">
+        <div class="col-lg-6  media-items__image--container">
             <img src="${media.img}" alt="" class="img-fluid media-items__item--image ">
         </div>
         <div class="media-items__item--description p-3  col-lg-6">
@@ -196,7 +196,7 @@ $(document).ready(function () {
         $('.advice-items').append(`
         
         <div class="media-items__item mb-4 row justify-content-between">
-        <div class="col-lg-6 px-0 media-items__image--container">
+        <div class="col-lg-6  media-items__image--container">
             <img src="${advice.img}" alt="" class="img-fluid media-items__item--image ">
         </div>
         <div class="media-items__item--description p-3 col-lg-6">
