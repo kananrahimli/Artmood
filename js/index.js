@@ -162,7 +162,7 @@ $(document).ready(function () {
                 </div>
             </div>
     
-            <div class="detail  ">
+            <div class="detail ">
                 <div class="detail-image mt-5 mb-4 "><img src="${$(card).find('.main-cards__card--image').attr('src')}" class="img-fluid " alt=""></div>
                 <div class="detail-description text-white"><p class="">${$(card).find('.main-cards__card--title').html()}</p></div>
             </div>

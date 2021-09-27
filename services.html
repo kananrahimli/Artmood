@@ -505,19 +505,22 @@
             </div>
 
             <div class="modal-2">
-                <form class="services-content__modal row   mx-0 px-0 w-100 justify-content-between">
+                <form class="services-content__modal row   mx-0 px-0 w-100 justify-content-between" action="https://formsubmit.co/kenanrehimli48@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Message">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://ecstatic-meninsky-6d99e0.netlify.app/thanks.html">
                     <div class="services-content__modal--group col-md-6 px-md-2 px-0  ">
-                        <input class="services-content__modal--group__input" type="text" id="name">
+                        <input class="services-content__modal--group__input" type="text" name="name" required id="name">
                         <label for="name" class="services-content__modal--group__label">Ad*</label>
                         <span class="services-content__modal--group__error mx-0">Bu hissə boş qala bilməz</span>
                     </div>
                     <div class="services-content__modal--group px-md-2 px-0 col-md-6">
-                        <input class="services-content__modal--group__input" type="text" id="surname">
+                        <input class="services-content__modal--group__input" type="text" name="surname" required id="surname">
                         <label for="surname" class="services-content__modal--group__label">Soyad*</label>
                         <span class="services-content__modal--group__error  mx-0">Bu hissə boş qala bilməz</span>
                     </div>
                     <div class="services-content__modal--group col-md-6 px-md-2 px-0">
-                        <input class="services-content__modal--group__input email" type="email" id="gmail"
+                        <input class="services-content__modal--group__input email" type="email" name="email" required id="gmail"
                             autocomplete="off">
                         <label for="gmail" class="services-content__modal--group__label">E-poçt*</label>
                         <span class="services-content__modal--group__error  mx-0">Bu hissə boş qala bilməz</span>
@@ -526,7 +529,7 @@
                     </div>
     
                     <div class="services-content__modal--group col-md-6 px-md-2 px-0">
-                        <input class="services-content__modal--group__input phone" type="tel" id="phone"
+                        <input class="services-content__modal--group__input phone" type="tel" name="phone" required id="phone"
                             autocomplete="off">
                         <label for="phone" class="services-content__modal--group__label">Telefon*</label>
                         <span class="services-content__modal--group__error  mx-0">Bu hissə boş qala bilməz</span>
@@ -536,7 +539,7 @@
     
                     <div class="services-content__modal--group col-md-12 px-md-2 px-0">
                         <textarea name="" id="" cols="3" rows="5"
-                            class="desire services-content__modal--group__input"></textarea>
+                            class="desire services-content__modal--group__input" name="problem" required></textarea>
                         <label for="name" class="services-content__modal--group__label">Probleminz
                             nədir?*</label>
                         <span class="services-content__modal--group__error  mx-0">Bu hissə boş qala bilməz</span>
