@@ -1,12 +1,12 @@
 .footer{
     overflow-x: hidden;
     .footer-container{
-        background: #242582;
+        background: #30E3CA;
         padding: 5rem 0;
 
         &__title{
             font-size: 1.5rem;
-            color: #ffffff;
+            color: #000;
             font-weight: 600;
             @media screen and (max-width:768px) {
                 font-size: 1.2rem;
@@ -15,7 +15,7 @@
 
         &__list{
            a{
-            color: #ffffff;
+            color: #000;
             text-decoration: none;
             font-size: 1.2rem;
             @media screen and (max-width:768px) {
@@ -27,8 +27,11 @@
     }
     
     .footer-bottom{
-        background: #181958;
+        background: #169c8a;
         width: 100vw;
+        p{
+            color: #ffffff;
+        }
 
         &__copyright{
             font-size: 1.3rem;

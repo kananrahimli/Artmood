@@ -6,15 +6,15 @@
         // height: 27rem;   
         &--item{
             // background: #eaeaea;
-            padding: 1.5rem 0;
+            padding: 1.2rem 0;
             border-radius: 12px;
             display: flex;
             width: 100%;
             cursor: pointer;
             transition: all 0.5s ;
-            color: #ffffff;
+            color: #000;
 
-            background: #f64c72;
+            background: #30E3CA;
             i{
                 font-size: 3rem;
                 @media screen and (max-width:768px) {
@@ -33,11 +33,11 @@
             
         }
         &--link{
-            color: #ffffff;
-            font-size: 1.8rem;
+            color: #000;
+            font-size: 1.4rem;
             text-decoration: none;
             @media screen and (max-width:768px) {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
             @media screen and (max-width:570px) {
                 font-size: 1rem;
@@ -52,10 +52,10 @@
 
         &__title{
             font-size: 1.4rem;
-            color: #ffffff;
+            color: #000;
 
             i{
-                color: #f64c72;
+                color: #30E3CA;
             }
             @media screen and (max-width:768px){
                 font-size: 1.4rem;
@@ -64,11 +64,11 @@
 
         &__link{
             font-size: 1.4rem;
-            color: #ffffff;
+            color: #000;
             text-decoration: none;
             transition: all 0.5s;
             &:hover{
-                color: #f64c72;
+                color: #30E3CA;
             }
             
         }

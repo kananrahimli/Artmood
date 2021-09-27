@@ -7,7 +7,7 @@
             content: "";
             width: 100%;
             height: 2px;
-            background: #f64c72;
+            background: #30E3CA;
             bottom: 0;
         }
         &__title{
@@ -21,7 +21,7 @@
         &__adres{
             font-size: 1.2rem;
             a{
-              color: #ffffff;
+              color: #000;
               text-decoration: none;
             }
             @media screen and (max-width:768px) {
@@ -34,7 +34,7 @@
         // background: #000;
         span{
           font-size: 2rem;
-          color: #ffffff;
+          color: #000;
           margin-left: 1rem;
           cursor: pointer;
           @media screen and (max-width:768px) {
@@ -50,7 +50,7 @@
           // text-align: center;
          
             &--link{
-              color: #ffffff;
+              color: #000;
               font-size: 2.8rem;
               cursor: pointer;
               @media screen and (max-width:768px) {
@@ -75,6 +75,17 @@
           top: 50%;
           transform: translate(-50%,-50%);
           display: none;
+
+          .services-content__modal--group__input,.desire{
+                    width: 100%;
+                    padding: 10px 10px;
+                    border-radius: 10px;
+                    color: #ffffff;
+                    margin: 15px 0 5px;
+                    background: transparent;
+                    outline: none;
+                    border: 2px solid #ffffff;
+          }
 
           .services-content__modal--group__label{
             position: absolute;
@@ -143,12 +154,12 @@
 
                   &__label{
                       position: absolute;
-                      background: #2f2fa2;
+                      background: #ffffff;
                       // background-color: rgba(0, 0, 0, 0.75);
                       cursor: text;
                       left: 2rem;
                       font-size: 20px;
-                      color: #ffffff;
+                      color: #000;
                       top: 22px;
                       transition: all 200ms ease-in;
                   }
@@ -162,11 +173,11 @@
                     width: 100%;
                     padding: 10px 10px;
                     border-radius: 10px;
-                    color: #ffffff;
+                    color: #000;
                     margin: 15px 0 5px;
                     background: transparent;
                     outline: none;
-                    border: 2px solid #ffffff;
+                    border: 2px solid #000;
 
                     &.invalid{
                       border: 2px solid red;

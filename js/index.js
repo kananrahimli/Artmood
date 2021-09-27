@@ -154,17 +154,17 @@ $(document).ready(function () {
             history.pushState({}, null, 'detail.html');
             $('.main').html(` <div class="services  mb-5 ">
             <div class="services-container d-flex justify-content-between w-100 mt-2 mb-5">
-                <h2 class="services-container__title text-white">
+                <h2 class="services-container__title text-dark">
                     <i class="fab fa-ups"></i> Details
                 </h2>
                 <div>
-                    <p class="text-white mt-2 services-container__adres"><a href="/index.html">Ana səhifə   </a>>  Details</p>
+                    <p class="text-dark mt-2 services-container__adres"><a href="/index.html">Ana səhifə   </a>>  Details</p>
                 </div>
             </div>
     
             <div class="detail ">
                 <div class="detail-image mt-5 mb-4 "><img src="${$(card).find('.main-cards__card--image').attr('src')}" class="img-fluid " alt=""></div>
-                <div class="detail-description text-white"><p class="">${$(card).find('.main-cards__card--title').html()}</p></div>
+                <div class="detail-description text-dark"><p class="">${$(card).find('.main-cards__card--title').html()}</p></div>
             </div>
         </div>`)
         $(window).scrollTop(0)
@@ -216,17 +216,17 @@ $(document).ready(function () {
             history.pushState({}, null, 'detail.html');
             $('.main').html(` <div class="services  ">
             <div class="services-container d-flex justify-content-between w-100 mt-2 mb-5">
-                <h2 class="services-container__title text-white">
+                <h2 class="services-container__title text-dark">
                     <i class="fab fa-ups"></i> Details
                 </h2>
                 <div>
-                    <p class="text-white mt-2 services-container__adres"><a href="/index.html">Ana səhifə   </a>>  Details</p>
+                    <p class="text-dark mt-2 services-container__adres"><a href="/index.html">Ana səhifə   </a>>  Details</p>
                 </div>
             </div>
     
             <div class="detail my-5 ">
                 <div class="detail-image mt-5 mb-4 "><img src="${$(item).parent().parent().find('.media-items__item--image').attr('src')}" class="img-fluid " alt=""></div>
-                <div class="detail-description text-white"><p class="">${$(item).parent().parent().find('.media-items__item--title').html()}</p></div>
+                <div class="detail-description text-dark"><p class="">${$(item).parent().parent().find('.media-items__item--title').html()}</p></div>
             </div>
         </div>`)
         $(window).scrollTop(0)
