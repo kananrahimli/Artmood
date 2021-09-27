@@ -40,7 +40,7 @@ $(document).ready(function () {
 
     $('.find-mobile').click(function(){
         localStorage.setItem('query',$('.search-input-mobile').val()); 
-        $(location).attr('href','http://127.0.0.1:5500/'+'search.html');    
+        $(location).attr('href','search.html');    
      })
     /**
      * @Note filter
