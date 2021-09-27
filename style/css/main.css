@@ -765,6 +765,10 @@ option {
   color: #f64c72;
 }
 
+.detail {
+  margin: 2rem 0rem 7rem;
+}
+
 .detail .detail-image {
   width: 100%;
   height: 30rem;

@@ -152,7 +152,7 @@ $(document).ready(function () {
         $(card).click(function(e){
            
             history.pushState({}, null, 'detail.html');
-            $('.main').html(` <div class="services g-container mb-5 ">
+            $('.main').html(` <div class="services  mb-5 ">
             <div class="services-container d-flex justify-content-between w-100 mt-2 mb-5">
                 <h2 class="services-container__title text-white">
                     <i class="fab fa-ups"></i> Details
@@ -162,7 +162,7 @@ $(document).ready(function () {
                 </div>
             </div>
     
-            <div class="detail my-5 ">
+            <div class="detail  ">
                 <div class="detail-image mt-5 mb-4 "><img src="${$(card).find('.main-cards__card--image').attr('src')}" class="img-fluid " alt=""></div>
                 <div class="detail-description text-white"><p class="">${$(card).find('.main-cards__card--title').html()}</p></div>
             </div>
