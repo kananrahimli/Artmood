@@ -421,6 +421,7 @@ $(document).ready(function () {
         $(".services-content__modal--group").find('.services-content__modal--group__error').removeClass('show')
         $(".services-content__modal--group").find('.incorrect-email').css('display', 'none')
         $(".services-content__modal--group").find('.incorrect-phone').css('display', 'none')
+        $('.services-content__modal--group__input').val()=""
     })
 
     $('.services-content__social').click(function () {
