@@ -122,7 +122,7 @@ $(document).ready(function () {
 
         
         else{
-            $('.filteredCard').append('<h1 class="text-white">Axtarış nəticəsi tapılmadı!</h1>')
+            $('.filteredCard').append('<h1 class="text-dark text-center">Axtarış nəticəsi tapılmadı!</h1>')
         }
     }
 
