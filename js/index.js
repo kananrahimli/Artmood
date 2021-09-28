@@ -73,7 +73,7 @@ $(document).ready(function () {
 
             currentCard.forEach(function(current){
                 $('.filteredCard').append(`
-                <div class="col-lg-6 mx-auto col-sm-6 px-0 my-4 ml-md-4 main-cards__card p-0 ">
+                <div class="col-lg-6 ml-md-2 ml-0 col-sm-6 px-0 my-4 main-cards__card p-0 ">
                        
                 <div class="">
                     <img src="${current.img}" class="img-fluid main-cards__card--image" alt="">
@@ -90,11 +90,11 @@ $(document).ready(function () {
             
         currentAdvice.forEach(function(advice){
                 $('.filteredAdvice').append(`
-                <div class="media-items__item mb-4 row justify-content-between">
-                <div class=" media-items__image--container">
+                <div class="media-items__item mb-4 row col-md-6 px-0 justify-content-between">
+                <div class=" media-items__image--container col-md-6">
                     <img src="${advice.img}" alt="" class="img-fluid media-items__item--image ">
                 </div>
-                <div class="media-items__item--description py-4 px-0  ">
+                <div class="media-items__item--description py-1 px-md-3  col-md-6  ">
                     <p class="media-items__item--title">${advice.desc}</p>
                     <a href="#" class="main-notifications__link more">Daha çox <i
                             class="fas fa-long-arrow-alt-right"></i></a>
@@ -105,11 +105,11 @@ $(document).ready(function () {
 
             currentMedia.forEach(function(media){
                 $('.filteredAdvice').append(`
-                <div class="media-items__item mb-4 row justify-content-between">
-                <div class=" media-items__image--container">
+                <div class="media-items__item mb-4 row col-md-6 px-0  justify-content-between">
+                <div class=" media-items__image--container col-md-6">
                     <img src="${media.img}" alt="" class="img-fluid media-items__item--image ">
                 </div>
-                <div class="media-items__item--description py-4 px-0  ">
+                <div class="media-items__item--description py-1 px-md-3  col-md-6  ">
                     <p class="media-items__item--title">${media.desc}</p>
                     <a href="#" class="main-notifications__link more">Daha çox <i
                             class="fas fa-long-arrow-alt-right"></i></a>
