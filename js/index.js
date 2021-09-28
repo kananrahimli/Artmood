@@ -442,4 +442,14 @@ $(document).ready(function () {
         $('.support-card__number').slideToggle('normal')
     })
 
+    $('.select-lang').click(function(){
+        $('.flag-name').html($(this).html())
+        $('.langs').hide()
+        if($('.flag-name').html()==='AZ'){
+            $('.flag').attr('src','/assest/azerbaijan.png')
+        }else{
+            $('.flag').attr('src','/assest/united-kingdom.png')
+        }
+    })
+
 })
