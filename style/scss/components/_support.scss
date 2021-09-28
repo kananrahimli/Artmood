@@ -1,0 +1,19 @@
+.support{
+    .support-title{
+        font-size: 2rem;
+        cursor: pointer;
+        @media screen and (max-width:768px) {
+            font-size: 1.3rem;
+        }
+    }
+    .support-card{
+        
+        &__number{
+            display: none;
+            font-size: 1.5rem;
+            @media screen and (max-width:768px) {
+                font-size: 1rem;
+            }
+        }
+    }
+}

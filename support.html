@@ -14,7 +14,6 @@
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -43,9 +42,9 @@
                 <span class="header-info__callcenter--title">Qaynarxətt</span>
                 <span class="header-info__callcenter--number"><i class="fas fa-phone-alt"></i>1654</span>
             </div>
-            <div class="header-info__search col-3 d-md-block d-none position-relative ">
+            <div class="header-info__search col-3 d-md-block d-none ">
                 <input class="header-info__search--box search-input" type="text" placeholder="Axtarış">
-                <i class="fas fa-search  text-white find search"></i>
+                <i class="fas fa-search  text-white find  search "></i>
             </div>
             <div class="header-info__logo2 col-md-1 col-4 order-md-0 order-3  text-right ">LOGO2</div>
         </div>
@@ -53,17 +52,17 @@
         <!-- ------------------------------Navigation---------------------------- -->
         <div class="header-navigation  g-container mb-5">
 
-            <ul class="header-navigation__menu desktop ">
+            <ul class="header-navigation__menu desktop  ">
 
-                <li class="header-navigation__menu--item  "><a href="/"><i
+                <li class="header-navigation__menu--item"><a href="/"><i
                             class="fas fa-home mt-1 text-dark d-md-block d-none"></i></a></li>
-                <li class="header-navigation__menu--item active"><a href="index.html">Ana səhifə</a>
+                <li class="header-navigation__menu--item"><a href="/index.html">Ana səhifə</a>
                 </li>
-                <li class="header-navigation__menu--item"><a href="about.html">Biz kimik?</a></li>
+                <li class="header-navigation__menu--item "><a href="/about.html">Biz kimik?</a></li>
                 <li class="header-navigation__menu--item"><a href="/services.html">Xidmətlər</a></li>
-                <li class="header-navigation__menu--item"><a href="/support.html">Dəstək ol</a>
+                <li class="header-navigation__menu--item active"><a href="/support.html">Dəstək ol</a>
                 </li>
-                <li class="header-navigation__menu--item"><a href="contact-us.html">Əlaqə</a>
+                <li class="header-navigation__menu--item"><a href="/contact-us.html">Əlaqə</a>
                 </li>
                 <li class="header-navigation__menu--item lang">
                     <div class="header-navigation__menu--language">
@@ -97,7 +96,7 @@
                     </div>
                 </div>
                 <li class="header-navigation__menu--item "><a href="/"><i
-                            class="fas fa-home mt-1 text-dark d-md-block d-none"></i></a></li>
+                            class="fas fa-home mt-1 text-white d-md-block d-none"></i></a></li>
                 <li class="header-navigation__menu--item"><a href="/index.html">Ana səhifə</a>
                 </li>
                 <li class="header-navigation__menu--item"><a href="/services.html">Xidmətlər</a></li>
@@ -136,132 +135,42 @@
     </section>
 
     <!-- -------------------------Main--------------------- -->
-
-    <section class="main g-container mt-4">
-        <div class="row justify-content-between align-items-between ">
-            <div class="main-slider col-lg-7 mb-lg-0 mb-5">
-                <div class="swiper mySwiper swiper1" id="">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="/assest/img1.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/assest/img2.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/assest/img3.jpg" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-            <div class="main-infos col-md-5  ">
-                <!-- <ul class="main-infos__list d-flex flex-column align-items-between justify-content-between">
-                    <li class="main-infos__list--item "><i class="far fa-3x fa-comment-dots"></i> <a
-                            class="main-infos__list--link ml-4" href="">Kiber təhlükəsizlik <br> insidentini
-                            bildirin</a></li>
-                    <li class="main-infos__list--item"><i class="far fa-3x fa-comment-dots"></i> <a
-                            class="main-infos__list--link ml-4" href="">Kiber təhlükəsizlik <br> insidentini
-                            bildirin</a></li>
-                    <li class="main-infos__list--item"><i class="far fa-3x fa-comment-dots"></i> <a
-                            class="main-infos__list--link ml-4" href="">Kiber təhlükəsizlik <br> insidentini
-                            bildirin</a></li>
-                </ul> -->
-
-                <div class="swiper mySwiper swiper2" id="">
-                    <div
-                        class="swiper-wrapper main-infos__list d-flex flex-column align-items-between justify-content-between">
-                        <div class="swiper-slide main-infos__list--item "><i class="far fa-3x fa-comment-dots"></i> <a
-                                class="main-infos__list--link ml-4" href="">Kiber təhlükəsizlik <br> insidentini
-                                bildirin</a> </div>
-                        <div class="swiper-slide main-infos__list--item "><i class="far fa-3x fa-comment-dots"></i> <a
-                                class="main-infos__list--link ml-4" href="">Kiber təhlükəsizlik <br> insidentini
-                                bildirin</a> </div>
-                        <div class="swiper-slide main-infos__list--item "><i class="far fa-3x fa-comment-dots"></i> <a
-                                class="main-infos__list--link ml-4" href="">Kiber təhlükəsizlik <br> insidentini
-                                bildirin</a> </div>
-                        <div class="swiper-slide main-infos__list--item "><i class="far fa-3x fa-comment-dots"></i> <a
-                                class="main-infos__list--link ml-4" href="">Kiber təhlükəsizlik <br> insidentini
-                                bildirin</a> </div>
-                        <div class="swiper-slide main-infos__list--item "><i class="far fa-3x fa-comment-dots"></i> <a
-                                class="main-infos__list--link ml-4" href="">Kiber təhlükəsizlik <br> insidentini
-                                bildirin</a> </div>
-                        <div class="swiper-slide main-infos__list--item "><i class="far fa-3x fa-comment-dots"></i> <a
-                                class="main-infos__list--link ml-4" href="">Kiber təhlükəsizlik <br> insidentini
-                                bildirin</a> </div>
-                        <div class="swiper-slide main-infos__list--item "><i class="far fa-3x fa-comment-dots"></i> <a
-                                class="main-infos__list--link ml-4" href="">Kiber təhlükəsizlik <br> insidentini
-                                bildirin</a> </div>
-                        <div class="swiper-slide main-infos__list--item "><i class="far fa-3x fa-comment-dots"></i> <a
-                                class="main-infos__list--link ml-4" href="">Kiber təhlükəsizlik <br> insidentini
-                                bildirin</a> </div>
-                        <div class="swiper-slide main-infos__list--item "><i class="far fa-3x fa-comment-dots"></i> <a
-                                class="main-infos__list--link ml-4" href="">Kiber təhlükəsizlik <br> insidentini
-                                bildirin</a> </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
+    <div class="services g-container">
+        <div class="services-container d-flex justify-content-between w-100 mt-2 mb-5">
+            <h2 class="services-container__title text-dark">
+                <i class="fab fa-ups"></i> Dəstək ol
+            </h2>
+            <div>
+                <p class="text-dark mt-2 services-container__adres"><a href="/index.html">Ana səhifə &nbsp; </a>> &nbsp;
+                    Dəstək ol</p>
             </div>
 
-            <div class="main-notifications  col-lg-12 my-4">
-                <div class="d-flex flex-wrap justify-content-between mt-3">
-                    <div class="main-notifications__title d-flex ">
-                        <i class="fas fa-exclamation-triangle mr-3 mt-1"></i>
-                        <p> Xəbərdarlıqlar</p>
-                    </div>
-                    <div class="">
-                        <a href="" class="main-notifications__link">Daha çox <i
-                                class="fas fa-long-arrow-alt-right"></i></a>
-                    </div>
 
-                </div>
-            </div>
+            
         </div>
 
-        <!-- ----------------------------Main cards-------------- -->
-        <div class="main-cards row justify-content-md-between justify-content-around">
-          
-        </div>
-
-        <!-- ADvices medias -->
-        <div class="row ">
-            <div class="media col-sm-6 mb-4 d-flex flex-column p-0 pr-sm-3  pl-0">
-                <div class="media-title my-4 w-100 py-3 px-md-4 px-0">
-                    <h2><i class="fas fa-file-signature mr-4"></i>Media</h2>
+        
+        
+            <div class="about pt-md-3 pb-md-5">
+               
+            <div class="support row text-center py-5">
+                <div class="support-million col-sm-6 mb-sm-0 mb-5 mx-auto">
+                    <h1 class="support-title million-title">Milli<span class="text-danger">ön</span> vasitəsilə dəstək ol
+                    </h1>
                 </div>
-                <div class="media-items isMedia  px-md-4 px-0 ">
-                   
+                <div class="support-card col-sm-6 mx-auto">
+                    <h1 class="support-title card-title">Kart vasitəsilə dəstək ol </h1>
+                    <div class="support-card mt-4">
+                        <h3 class="support-card__number ml-md-5 ml-0">Hesab Nömrəsi:&nbsp;<span>4169734598763542</span>
+                        </h3>
+                    </div>
                 </div>
+    
             </div>
-
-            <div class="media col-sm-6 mb-4 d-flex flex-column p-0 pr-sm-3  pl-0">
-                <div class="media-title my-4 w-100 py-3 px-md-4 px-0">
-                    <h2><i class="fas fa-file-signature mr-4"></i>Tövsiyyələr</h2>
-                </div>
-                <div class="media-items  advice-items px-md-4 px-0 ">
-                    
-                </div>
             </div>
-            <!-- <div class="advices col-md-6"></div> -->
-        </div>
-
-        <!-- ----------------Partners----------------- -->
-
-        <div class="partners py-5 w-100">
-            <h2 class="text-center my-5 font-weight-bold text-white">Partnyorlar</h2>
-            <div class="partners-slider">
-                <div class="owl-carousel owl-theme text ">
-                    <div class="item" style="height: 8rem; width: 100%;"><img class="img-fluid" src="/assest/socar.png" alt=""></div>
-                    <div class="item" style="height: 8rem; width: 100%;"><img class="img-fluid" src="/assest/palmali.jpg" alt=""></div>
-                    <div class="item" style="height: 8rem; width: 100%;"><img class="img-fluid" src="/assest/lukoil.png" alt=""></div>
-                    
-                </div>
-            </div>
-        </div>
-        <!-- ----------------Partners----------------- -->
-    </section>
+        
+        
+    </div>
 
 
     <!-- ---------------------Footer----------------- -->
@@ -310,10 +219,10 @@
                     <a href=""><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <div class="col-md-7 my-md-auto text-center my-5">
-                    <p class="footer-bottom__copyright ">© 2013-2021 CERT.AZ | Bütün hüquqlar qorunur.</p>
+                    <p class="footer-bottom__copyright text-white">© 2013-2021 CERT.AZ | Bütün hüquqlar qorunur.</p>
                 </div>
                 <div class="col-md-2 my-md-auto text-md-right text-center go-up">
-                    <p class=" ">Yuxari get <i class="fas fa-chevron-up text-white ml-3 mt-1"></i></p>
+                    <p class="text-white ">Yuxari get <i class="fas fa-chevron-up text-white ml-3 mt-1"></i></p>
                 </div>
             </div>
         </div>
@@ -324,7 +233,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   
+
+
 </body>
 
 </html>

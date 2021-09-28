@@ -438,4 +438,8 @@ $(document).ready(function () {
         }
     })
 
+    $('.card-title').click(function(){
+        $('.support-card__number').slideToggle('normal')
+    })
+
 })

@@ -834,7 +834,10 @@ option {
 }
 
 .media .media-items__item .media-items__image--container {
+  cursor: pointer;
+  padding: 0;
   height: 12rem;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -856,7 +859,7 @@ option {
 .media .media-items__item--image {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 0px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   -o-object-fit: cover;
@@ -932,5 +935,27 @@ option {
   font-size: 1.2rem;
   color: #ffffff;
   text-decoration: none;
+}
+
+.support .support-title {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .support .support-title {
+    font-size: 1.3rem;
+  }
+}
+
+.support .support-card__number {
+  display: none;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .support .support-card__number {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
