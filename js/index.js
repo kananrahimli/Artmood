@@ -34,7 +34,7 @@ $(document).ready(function () {
      */
     $('.find').click(function(){
         localStorage.setItem('query',$('.search-input').val()); 
-        $(location).attr('href','http://127.0.0.1:5500/'+'search.html');
+        $(location).attr('href','search.html');
        
     })
 
@@ -54,14 +54,14 @@ $(document).ready(function () {
         // });
 
         let currentCard= cards.filter(function(card){
-            return card.desc.toLowerCase().includes(localStorage.getItem('query').toLowerCase());
+            return card.desc.trim().toLowerCase().includes(localStorage.getItem('query').toLowerCase().trim());
             
         })  
         let currentAdvice= advices.filter(function(advice){
-            return advice.desc.toLowerCase().includes(localStorage.getItem('query').toLowerCase());
+            return advice.desc.trim().toLowerCase().includes(localStorage.getItem('query').toLowerCase().trim());
         }) 
         let currentMedia= medias.filter(function(media){
-            return media.desc.toLowerCase().includes(localStorage.getItem('query').toLowerCase());
+            return media.desc.toLowerCase().includes(localStorage.getItem('query').toLowerCase().trim());
         }) 
 
         console.log(currentMedia);
